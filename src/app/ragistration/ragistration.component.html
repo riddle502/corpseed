@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER HERE</title>
+</head>
+<body>
+    <div class="container-sm ">
+        <div class="sign my-3 ">
+        <h1>Sign Up</h1>
+        <p>We understand your privacy is important *</p>
+       
+        <form (ngSubmit)="onSubmit(myform)" #myform="ngForm">
+            <div class="form-group" (click)="googleSignUp()">
+                <a href="#" class="form-control form-control-lg up bord">
+                <i class="fab fa-google fa-4x"></i>&nbsp;&nbsp; Sign Up With Google</a>
+            </div>
+            <div class="form-group">
+                <div class="seperator"><b>Or Sign Up With Email</b></div>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlInput1 ">Mobile No.*</label>
+                <input name="mobile" type="number" class="form-control form-control-lg bord" id="exampleFormControlInput1" placeholder="Enter your mobile no." ngModel>
+            </div>
+        
+       
+        <div class="form-group">
+            <label for="exampleFormControlInput1 ">Otp</label>
+            <input name="otp" type="number" class="form-control form-control-lg bord" id="exampleFormControlInput1" placeholder="enter your Otp" ngModel>
+          </div>
+        
+       
+        <div class="form-group">
+            <label for="exampleFormControlInput1 ">Password*</label>
+            <input name="password" type="password" class="form-control form-control-lg bord" id="exampleFormControlInput1" placeholder="Enter your Password" ngModel>
+        </div>
+        
+       
+       
+        <div class="form-check mt-3 reme">
+            <div class="row">
+                <div class="col-sm-6">
+                    
+                      <input name="checkbox" type="checkbox"class="rounded-checkbox"id="checkbox" ngModel/> 
+                      <label for="checkbox" class="rem">Remember Me</label>
+                    
+                </div>
+          
+                <div class="col-sm-6">
+                    
+                    <button type="submit" class="btn btn-outline-primary btns ">Sign up</button>
+               
+                </div>
+            </div>
+       
+        </div>
+        
+        
+    </form>
+    </div>
+</div>
+</body>
+</html>
